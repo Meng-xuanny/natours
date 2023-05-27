@@ -98,6 +98,30 @@
           <div class="col-1-of-2">
             <div class="composition">
               <img
+                srcset="img/nat-1.jpeg 300w, img/nat-1-large.jpeg 1000w"
+                sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                alt="nature photo"
+                src="./img/nat-1-large.jpeg"
+                class="composition__photo composition__photo--p1"
+              />
+
+              <img
+                srcset="img/nat-2.jpeg 300w, img/nat-2-large.jpeg 1000w"
+                sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                alt="nature photo"
+                src="./img/nat-2-large.jpeg"
+                class="composition__photo composition__photo--p2"
+              />
+
+              <img
+                srcset="img/nat-3.jpeg 300w, img/nat-3-large.jpeg 1000w"
+                sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                alt="nature photo"
+                src="./img/nat-3-large.jpeg"
+                class="composition__photo composition__photo--p3"
+              />
+
+              <!-- <img
                 src="./img/nat-1-large.jpeg"
                 alt="nature photo"
                 class="composition__photo composition__photo--p1"
@@ -111,7 +135,7 @@
                 src="./img/nat-3-large.jpeg"
                 alt="nature photo"
                 class="composition__photo composition__photo--p3"
-              />
+              /> -->
             </div>
           </div>
         </div>
@@ -206,7 +230,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$297</p>
                   </div>
-                  <a href="#popup" class="btn btn--white">Book Now</a>
+                  <a href="#popup" class="btn btn--booking">Book Now</a>
                 </div>
               </div>
             </div>
@@ -239,7 +263,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$597</p>
                   </div>
-                  <a href="#popup" class="btn btn--white">Book Now</a>
+                  <a href="#popup" class="btn btn--booking">Book Now</a>
                 </div>
               </div>
             </div>
@@ -272,7 +296,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$897</p>
                   </div>
-                  <a href="#popup" class="btn btn--white">Book Now</a>
+                  <a href="#popup" class="btn btn--booking">Book Now</a>
                 </div>
               </div>
             </div>
@@ -419,7 +443,20 @@
 
     <footer class="footer">
       <div class="footer__logo-box">
-        <img src="img/logo-green-2x.png" alt="full logo" class="footer__logo" />
+        <picture class="footer__logo">
+          <source
+            srcset="
+              img/logo-green-small-1x.png 1x,
+              img/logo-green-small-2x.png 2x
+            "
+            media="(max-width: 37.5em)"
+          />
+
+          <img
+            srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x"
+            alt="full logo"
+          />
+        </picture>
       </div>
 
       <div class="row">

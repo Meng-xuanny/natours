@@ -12,3 +12,28 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+//media query manager
+
+@mixin respond($breakpoint) {
+  @if $breakpoint==phone {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    }
+  }
+  @if $breakpoint==tab-port {
+    @media only screen and(max-width: 56.25em) {
+      @content;
+    }
+  }
+  @if $breakpoint==tab-land {
+    @media only screen and(max-width: 75em) {
+      @content;
+    }
+  }
+  @if $breakpoint==big-desktop {
+    @media only screen and(min-width: 112.5em) {
+      @content;
+    }
+  }
+}

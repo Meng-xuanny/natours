@@ -14,6 +14,17 @@
     border: none;
   }
 
+  &--booking {
+    position: absolute;
+    color: $color-white;
+
+    &:hover,
+    &:active {
+      background-color: $color-white;
+      color: $color-grey;
+    }
+  }
+
   &:hover {
     transform: translateY(-3px);
     box-shadow: 0 1rem 2rem rgba($color-black, 0.2); /*last number is the opacity*/
