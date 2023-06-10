@@ -17,7 +17,8 @@
       $color-primary-dark
     );
     display: inline-block;
-    -webkit-background-clip: text; /*clip so the block has the shape of the icon*/
+    -webkit-background-clip: text;
+    background-clip: text; /*clip so the block has the shape of the icon*/
     color: transparent;
     font-size: 6rem;
     margin-bottom: 0.5rem;
